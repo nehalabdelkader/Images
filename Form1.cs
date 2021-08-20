@@ -12,10 +12,13 @@ namespace images
 {
     public partial class Form1 : Form
     {
+        Controller controllerObj;
+        
         public Form1()
         {
-            InitializeComponent();
+           InitializeComponent();
            ListDirectory();
+           controllerObj = new Controller();
         }
 
         private void ListDirectory()
@@ -27,7 +30,7 @@ namespace images
         private TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
         {
             var directoryNode = new TreeNode(directoryInfo.Name);
-
+            
             foreach (var directory in directoryInfo.GetDirectories())
                 directoryNode.Nodes.Add(CreateDirectoryNode(directory));
 
@@ -37,9 +40,24 @@ namespace images
             return directoryNode;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (treeView1.SelectedNode.Nodes.Count== 0)
+            {
+               pictureBox1.Image = null;
+               try
+                {
+                    pictureBox1.Image = Image.FromFile(@"F:\\test\\" + treeView1.SelectedNode.Text);
+                }
+                catch(FileNotFoundException)
+                {} 
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            controllerObj.InsertData(nameBox.Text, addressBox.Text, emailBox.Text);
         }
     }
 }
