@@ -1,0 +1,9 @@
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\bin\Debug\images.exe
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\bin\Debug\images.pdb
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.csprojAssemblyReference.cache
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.Form1.resources
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.Properties.Resources.resources
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.csproj.GenerateResource.cache
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.csproj.CoreCompileInputs.cache
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.exe
+C:\Users\Neooz\Documents\Visual Studio 2017\Projects\images\images\obj\Debug\images.pdb
